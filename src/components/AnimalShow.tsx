@@ -14,7 +14,19 @@ export function AnimalShow({ image }: AnimalShowProps) {
 
   return (
     <figure
-      className="flex justify-center items-center relative cursor-pointer bg-amber-100 w-50 h-50 shadow-gray-400 shadow-2xl rounded-2xl select-none"
+      className="
+      flex
+      justify-center 
+      items-center 
+      relative 
+      cursor-pointer 
+      bg-amber-100 
+      w-50 
+      h-50 
+      shadow-gray-400 
+      shadow-2xl 
+      rounded-2xl 
+      select-none"
       onClick={handleClick}
     >
       <img src={`${image}`} width="150" />

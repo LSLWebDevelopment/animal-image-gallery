@@ -6,10 +6,10 @@ type AnimalShowProps = {
 };
 
 export function AnimalShow({ image }: AnimalShowProps) {
-  const [size, setSize] = useState(20);
+  const [size, setSize] = useState(50);
 
   const handleClick = () => {
-    setSize(size + 5);
+    setSize(size + 10);
   };
 
   return (
@@ -30,7 +30,7 @@ export function AnimalShow({ image }: AnimalShowProps) {
       onClick={handleClick}
     >
       <img src={`${image}`} width="150" />
-      {size > 20 && (
+      {size > 50 && (
         <img
           src={heart}
           alt="heart"
